@@ -1,0 +1,22 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 20px;
+  gap: 20px 20px;
+  height: 86vh;
+}
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  box-shadow: -2px -2px 8px 1px white, 7px 5px 7px 2px #bcbcbc,
+    inset 2px 2px 0px -1px white;
+}
+.box2 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}

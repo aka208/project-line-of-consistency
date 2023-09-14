@@ -1,6 +1,28 @@
 .header-container {
   border: none;
-  padding: 10px;
+  background-color: #ecf0f3;
+  padding: 10px 15px 10px 15px;
+  justify-content: space-between;
   box-shadow: -2px -2px 8px 1px white, 7px 5px 7px 2px #bcbcbc,
     inset 2px 2px 0px -1px white;
+  display: flex;
+  flex-direction: row;
+}
+.menu-icon {
+  cursor: pointer;
+}
+.user-profile {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: -2px -2px 8px 1px white, 7px 5px 7px 2px #bcbcbc,
+    inset 2px 2px 0px -1px white;
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: -2px -2px 8px 1px white, 7px 5px 2px 2px #bcbcbc,
+      inset 3px 3px 1px -1px white;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
 }

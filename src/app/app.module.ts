@@ -8,6 +8,7 @@ import { FooterComponent } from './common/footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,12 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     HomeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    DashboardModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
